@@ -14,9 +14,6 @@ enum ErrorHandler {
     case badDecoding(Error)
 }
 
-
-
-
 final class IgnAPIClient {
     static func getArticles(completionHandler: @escaping(([IGN.Article]?, ErrorHandler?) -> Void)) {
         let urlString = "https://newsapi.org/v2/top-headlines?sources=ign&apiKey=\(SecretKeys.APIKey)"
@@ -35,7 +32,6 @@ final class IgnAPIClient {
             }
         }.resume()
     }
-    
     static func getImage(url: String) -> UIImage? {
         guard let imageUrl = URL.init(string: url) else { return nil }
         guard let data = try? Data.init(contentsOf: imageUrl) else {return nil }

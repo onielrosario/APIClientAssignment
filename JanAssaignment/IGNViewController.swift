@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SafariServices
+
 
 class IGNViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -22,6 +24,8 @@ class IGNViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        //SFSafariViewController = self
         tableView.dataSource = self
         tableView.delegate = self
         IgnAPIClient.getArticles { (articles, error) in
@@ -36,8 +40,10 @@ class IGNViewController: UIViewController {
         
     }
     
-    @objc func tapFunction(sender:UITapGestureRecognizer) {
-        print("tap working")
+    @objc func tapFunction(sender: TapGestureRecognizer) {
+        let safari = SFSafariViewController.init(url: URL(string: sender.url)!)
+        safari.delegate = self
+        present(safari, animated: true, completion: nil)
     }
     
     
@@ -71,10 +77,13 @@ extension IGNViewController: UITableViewDataSource {
         cell.articleDate.text = convertDate(str: indexpath.publishedAt)
         cell.articleLink.isUserInteractionEnabled = true
         cell.articleLink.text = ">>Click for more info<<"
+        cell.articleLink.textColor = .blue
         //found a method to make labels clickable
         //source: https://stackoverflow.com/questions/33658521/how-to-make-a-uilabel-clickable
-         let tap = UITapGestureRecognizer(target: self, action: #selector(IGNViewController.tapFunction))
+        let tap = TapGestureRecognizer(target: self, action: #selector(IGNViewController.tapFunction))
+         tap.url = indexpath.url
         cell.articleLink.addGestureRecognizer(tap)
+//        tapFunction(sender: tap, url: indexpath.url)
         return cell
     }
 }
@@ -83,5 +92,10 @@ extension IGNViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 350
     }
+}
+
+extension IGNViewController: SFSafariViewControllerDelegate {
+    
+    
 }
 

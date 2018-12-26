@@ -16,6 +16,7 @@
 		0904012E21C837AA009C214E /* IGNNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904012D21C837AA009C214E /* IGNNews.swift */; };
 		0904013021C83F4B009C214E /* IgnAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904012F21C83F4B009C214E /* IgnAPIClient.swift */; };
 		0904013221C85689009C214E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904013121C85689009C214E /* CustomTableViewCell.swift */; };
+		090B077321D43B3400F62767 /* TapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077221D43B3400F62767 /* TapGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0904012D21C837AA009C214E /* IGNNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGNNews.swift; sourceTree = "<group>"; };
 		0904012F21C83F4B009C214E /* IgnAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnAPIClient.swift; sourceTree = "<group>"; };
 		0904013121C85689009C214E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		090B077221D43B3400F62767 /* TapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		0904010921C819D7009C214E = {
 			isa = PBXGroup;
 			children = (
+				090B077221D43B3400F62767 /* TapGestureRecognizer.swift */,
 				0904011421C819D7009C214E /* JanAssaignment */,
 				0904011321C819D7009C214E /* Products */,
 			);
@@ -149,6 +152,7 @@
 			files = (
 				0904013221C85689009C214E /* CustomTableViewCell.swift in Sources */,
 				0904011821C819D7009C214E /* IGNViewController.swift in Sources */,
+				090B077321D43B3400F62767 /* TapGestureRecognizer.swift in Sources */,
 				0904011621C819D7009C214E /* AppDelegate.swift in Sources */,
 				0904013021C83F4B009C214E /* IgnAPIClient.swift in Sources */,
 				0904012C21C8373E009C214E /* SecretKeys.swift in Sources */,
