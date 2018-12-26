@@ -32,9 +32,26 @@ class IGNViewController: UIViewController {
             self.articles = articles
             }
         }
-        title = "IGN Network"
+        title = "🎮 Gaming News 🎮"
+        
     }
-
+    
+    @objc func tapFunction(sender:UITapGestureRecognizer) {
+        print("tap working")
+    }
+    
+    
+}
+func convertDate(str: String) -> String {
+    // "2018-12-18T06:06:35Z"
+var arr = str.components(separatedBy: "T")
+let string = arr[0]
+    let dateFormater = DateFormatter()
+    dateFormater.dateFormat = "yyyy-MM-dd"
+    let date = dateFormater.date(from: string) // Date
+    dateFormater.dateFormat = "MMMM dd, yyyy"
+   let finalStr = dateFormater.string(from: date!)
+    return finalStr
 }
 
 extension IGNViewController: UITableViewDataSource {
@@ -51,16 +68,20 @@ extension IGNViewController: UITableViewDataSource {
             cell.articleAuthor.text = "Author: \(indexpath.author ?? "Anonymous")"
         }
         cell.articleDescription.text = indexpath.description
-        cell.articleDate.text = indexpath.publishedAt
-        cell.articleLink.text = indexpath.url
-        
+        cell.articleDate.text = convertDate(str: indexpath.publishedAt)
+        cell.articleLink.isUserInteractionEnabled = true
+        cell.articleLink.text = ">>Click for more info<<"
+        //found a method to make labels clickable
+        //source: https://stackoverflow.com/questions/33658521/how-to-make-a-uilabel-clickable
+         let tap = UITapGestureRecognizer(target: self, action: #selector(IGNViewController.tapFunction))
+        cell.articleLink.addGestureRecognizer(tap)
         return cell
     }
 }
 
 extension IGNViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 500
+        return 350
     }
-    
 }
+
