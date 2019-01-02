@@ -43,8 +43,6 @@ class IGNViewController: UIViewController {
         safari.delegate = self
         present(safari, animated: true, completion: nil)
     }
-    
-    
 }
 func convertDate(str: String) -> String {
     var arr = str.components(separatedBy: "T")
@@ -90,7 +88,7 @@ extension IGNViewController: UITableViewDataSource {
 
 extension IGNViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 350
+        return 300
     }
 }
 

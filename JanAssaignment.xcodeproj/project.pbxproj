@@ -7,20 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0904011621C819D7009C214E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904011521C819D7009C214E /* AppDelegate.swift */; };
 		0904011821C819D7009C214E /* IGNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904011721C819D7009C214E /* IGNViewController.swift */; };
 		0904011B21C819D7009C214E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0904011921C819D7009C214E /* Main.storyboard */; };
 		0904012021C819DA009C214E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0904011E21C819DA009C214E /* LaunchScreen.storyboard */; };
 		0904012C21C8373E009C214E /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904012B21C8373E009C214E /* SecretKeys.swift */; };
-		0904012E21C837AA009C214E /* IGNNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904012D21C837AA009C214E /* IGNNews.swift */; };
-		0904013021C83F4B009C214E /* IgnAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904012F21C83F4B009C214E /* IgnAPIClient.swift */; };
-		0904013221C85689009C214E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904013121C85689009C214E /* CustomTableViewCell.swift */; };
 		090B077321D43B3400F62767 /* TapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077221D43B3400F62767 /* TapGestureRecognizer.swift */; };
-		090B078121D445F600F62767 /* IgnAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077521D445F600F62767 /* IgnAPIClient.swift */; };
 		090B078221D445F600F62767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090B077621D445F600F62767 /* Assets.xcassets */; };
 		090B078521D445F600F62767 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077B21D445F600F62767 /* CustomTableViewCell.swift */; };
-		090B078621D445F600F62767 /* IGNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077C21D445F600F62767 /* IGNViewController.swift */; };
-		090B078721D445F600F62767 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077D21D445F600F62767 /* SecretKeys.swift */; };
 		090B078821D445F600F62767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077E21D445F600F62767 /* AppDelegate.swift */; };
 		090B078921D445F600F62767 /* IGNNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077F21D445F600F62767 /* IGNNews.swift */; };
 		090B078E21D44D1200F62767 /* ignLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 090B078D21D44D1200F62767 /* ignLogo.png */; };
@@ -28,6 +21,8 @@
 		09F33C1B21DD5B5500782300 /* Tech Headlines.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F33C1721DD5B5500782300 /* Tech Headlines.otf */; };
 		09F33C1C21DD5B5500782300 /* Tech Headlines Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F33C1821DD5B5500782300 /* Tech Headlines Italic.otf */; };
 		09F33C1D21DD5B5500782300 /* Tech Headlines Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09F33C1921DD5B5500782300 /* Tech Headlines Italic.ttf */; };
+		09F33C1F21DD654300782300 /* IGNNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904012D21C837AA009C214E /* IGNNews.swift */; };
+		09F33C2021DD657500782300 /* IgnAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904012F21C83F4B009C214E /* IgnAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				09F33C1521DD5B1A00782300 /* fonts */,
-				090B077221D43B3400F62767 /* TapGestureRecognizer.swift */,
+				09F33C1E21DD640F00782300 /* model */,
 				0904011421C819D7009C214E /* JanAssaignment */,
 				0904011321C819D7009C214E /* Products */,
 			);
@@ -92,11 +87,12 @@
 		0904011421C819D7009C214E /* JanAssaignment */ = {
 			isa = PBXGroup;
 			children = (
-				0904011521C819D7009C214E /* AppDelegate.swift */,
-				0904011721C819D7009C214E /* IGNViewController.swift */,
-				0904012D21C837AA009C214E /* IGNNews.swift */,
-				0904012F21C83F4B009C214E /* IgnAPIClient.swift */,
 				0904012B21C8373E009C214E /* SecretKeys.swift */,
+				0904012F21C83F4B009C214E /* IgnAPIClient.swift */,
+				090B077221D43B3400F62767 /* TapGestureRecognizer.swift */,
+				0904011521C819D7009C214E /* AppDelegate.swift */,
+				0904012D21C837AA009C214E /* IGNNews.swift */,
+				0904011721C819D7009C214E /* IGNViewController.swift */,
 				0904011921C819D7009C214E /* Main.storyboard */,
 				0904013121C85689009C214E /* CustomTableViewCell.swift */,
 				0904011C21C819DA009C214E /* Assets.xcassets */,
@@ -134,6 +130,13 @@
 				09F33C1621DD5B5500782300 /* Tech Headlines.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		09F33C1E21DD640F00782300 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,17 +217,12 @@
 			files = (
 				090B078821D445F600F62767 /* AppDelegate.swift in Sources */,
 				090B078521D445F600F62767 /* CustomTableViewCell.swift in Sources */,
-				0904013221C85689009C214E /* CustomTableViewCell.swift in Sources */,
+				09F33C2021DD657500782300 /* IgnAPIClient.swift in Sources */,
 				0904011821C819D7009C214E /* IGNViewController.swift in Sources */,
+				09F33C1F21DD654300782300 /* IGNNews.swift in Sources */,
 				090B077321D43B3400F62767 /* TapGestureRecognizer.swift in Sources */,
-				0904011621C819D7009C214E /* AppDelegate.swift in Sources */,
 				090B078921D445F600F62767 /* IGNNews.swift in Sources */,
-				090B078621D445F600F62767 /* IGNViewController.swift in Sources */,
-				090B078121D445F600F62767 /* IgnAPIClient.swift in Sources */,
-				0904013021C83F4B009C214E /* IgnAPIClient.swift in Sources */,
 				0904012C21C8373E009C214E /* SecretKeys.swift in Sources */,
-				0904012E21C837AA009C214E /* IGNNews.swift in Sources */,
-				090B078721D445F600F62767 /* SecretKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
