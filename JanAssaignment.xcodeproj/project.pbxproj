@@ -17,12 +17,12 @@
 		090B078821D445F600F62767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077E21D445F600F62767 /* AppDelegate.swift */; };
 		090B078921D445F600F62767 /* IGNNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090B077F21D445F600F62767 /* IGNNews.swift */; };
 		090B078E21D44D1200F62767 /* ignLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 090B078D21D44D1200F62767 /* ignLogo.png */; };
-		09F33C1A21DD5B5500782300 /* Tech Headlines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09F33C1621DD5B5500782300 /* Tech Headlines.ttf */; };
-		09F33C1B21DD5B5500782300 /* Tech Headlines.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F33C1721DD5B5500782300 /* Tech Headlines.otf */; };
-		09F33C1C21DD5B5500782300 /* Tech Headlines Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F33C1821DD5B5500782300 /* Tech Headlines Italic.otf */; };
-		09F33C1D21DD5B5500782300 /* Tech Headlines Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09F33C1921DD5B5500782300 /* Tech Headlines Italic.ttf */; };
 		09F33C1F21DD654300782300 /* IGNNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904012D21C837AA009C214E /* IGNNews.swift */; };
 		09F33C2021DD657500782300 /* IgnAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904012F21C83F4B009C214E /* IgnAPIClient.swift */; };
+		09F5F4FA21E3B7A800BCC785 /* Tech Headlines Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F4F621E3B7A800BCC785 /* Tech Headlines Italic.otf */; };
+		09F5F4FB21E3B7A800BCC785 /* Tech Headlines.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F4F721E3B7A800BCC785 /* Tech Headlines.png */; };
+		09F5F4FC21E3B7A800BCC785 /* Tech Headlines.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F4F821E3B7A800BCC785 /* Tech Headlines.otf */; };
+		09F5F4FD21E3B7A800BCC785 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F4F921E3B7A800BCC785 /* license.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +49,10 @@
 		090B077F21D445F600F62767 /* IGNNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGNNews.swift; sourceTree = "<group>"; };
 		090B078021D445F600F62767 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090B078D21D44D1200F62767 /* ignLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ignLogo.png; path = ../../../../Downloads/ignLogo.png; sourceTree = "<group>"; };
-		09F33C1621DD5B5500782300 /* Tech Headlines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tech Headlines.ttf"; path = "../../../../Downloads/tech_headlines/Tech Headlines.ttf"; sourceTree = "<group>"; };
-		09F33C1721DD5B5500782300 /* Tech Headlines.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tech Headlines.otf"; path = "../../../../Downloads/tech_headlines/Tech Headlines.otf"; sourceTree = "<group>"; };
-		09F33C1821DD5B5500782300 /* Tech Headlines Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tech Headlines Italic.otf"; path = "../../../../Downloads/tech_headlines/Tech Headlines Italic.otf"; sourceTree = "<group>"; };
-		09F33C1921DD5B5500782300 /* Tech Headlines Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tech Headlines Italic.ttf"; path = "../../../../Downloads/tech_headlines/Tech Headlines Italic.ttf"; sourceTree = "<group>"; };
+		09F5F4F621E3B7A800BCC785 /* Tech Headlines Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tech Headlines Italic.otf"; sourceTree = "<group>"; };
+		09F5F4F721E3B7A800BCC785 /* Tech Headlines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tech Headlines.png"; sourceTree = "<group>"; };
+		09F5F4F821E3B7A800BCC785 /* Tech Headlines.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tech Headlines.otf"; sourceTree = "<group>"; };
+		09F5F4F921E3B7A800BCC785 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,7 @@
 		0904010921C819D7009C214E = {
 			isa = PBXGroup;
 			children = (
-				09F33C1521DD5B1A00782300 /* fonts */,
-				09F33C1E21DD640F00782300 /* model */,
+				09F5F4F521E3B7A800BCC785 /* tech_headlines */,
 				0904011421C819D7009C214E /* JanAssaignment */,
 				0904011321C819D7009C214E /* Products */,
 			);
@@ -121,22 +120,15 @@
 			name = JanAssaignment;
 			sourceTree = "<group>";
 		};
-		09F33C1521DD5B1A00782300 /* fonts */ = {
+		09F5F4F521E3B7A800BCC785 /* tech_headlines */ = {
 			isa = PBXGroup;
 			children = (
-				09F33C1821DD5B5500782300 /* Tech Headlines Italic.otf */,
-				09F33C1921DD5B5500782300 /* Tech Headlines Italic.ttf */,
-				09F33C1721DD5B5500782300 /* Tech Headlines.otf */,
-				09F33C1621DD5B5500782300 /* Tech Headlines.ttf */,
+				09F5F4F621E3B7A800BCC785 /* Tech Headlines Italic.otf */,
+				09F5F4F721E3B7A800BCC785 /* Tech Headlines.png */,
+				09F5F4F821E3B7A800BCC785 /* Tech Headlines.otf */,
+				09F5F4F921E3B7A800BCC785 /* license.txt */,
 			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
-		09F33C1E21DD640F00782300 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
+			path = tech_headlines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,14 +189,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F33C1B21DD5B5500782300 /* Tech Headlines.otf in Resources */,
 				0904012021C819DA009C214E /* LaunchScreen.storyboard in Resources */,
 				090B078221D445F600F62767 /* Assets.xcassets in Resources */,
+				09F5F4FC21E3B7A800BCC785 /* Tech Headlines.otf in Resources */,
 				090B078E21D44D1200F62767 /* ignLogo.png in Resources */,
-				09F33C1D21DD5B5500782300 /* Tech Headlines Italic.ttf in Resources */,
-				09F33C1A21DD5B5500782300 /* Tech Headlines.ttf in Resources */,
+				09F5F4FD21E3B7A800BCC785 /* license.txt in Resources */,
 				0904011B21C819D7009C214E /* Main.storyboard in Resources */,
-				09F33C1C21DD5B5500782300 /* Tech Headlines Italic.otf in Resources */,
+				09F5F4FB21E3B7A800BCC785 /* Tech Headlines.png in Resources */,
+				09F5F4FA21E3B7A800BCC785 /* Tech Headlines Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
