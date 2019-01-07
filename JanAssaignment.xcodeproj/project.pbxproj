@@ -23,6 +23,9 @@
 		09F5F4FB21E3B7A800BCC785 /* Tech Headlines.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F4F721E3B7A800BCC785 /* Tech Headlines.png */; };
 		09F5F4FC21E3B7A800BCC785 /* Tech Headlines.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F4F821E3B7A800BCC785 /* Tech Headlines.otf */; };
 		09F5F4FD21E3B7A800BCC785 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F4F921E3B7A800BCC785 /* license.txt */; };
+		09F5F50021E3BA0400BCC785 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5F4FF21E3BA0400BCC785 /* LoginViewController.swift */; };
+		09F5F50321E3BA6B00BCC785 /* constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5F50221E3BA6B00BCC785 /* constans.swift */; };
+		09F5F50521E3C2FC00BCC785 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F50421E3C2FC00BCC785 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		09F5F4F721E3B7A800BCC785 /* Tech Headlines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tech Headlines.png"; sourceTree = "<group>"; };
 		09F5F4F821E3B7A800BCC785 /* Tech Headlines.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tech Headlines.otf"; sourceTree = "<group>"; };
 		09F5F4F921E3B7A800BCC785 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		09F5F4FF21E3BA0400BCC785 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		09F5F50221E3BA6B00BCC785 /* constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constans.swift; sourceTree = "<group>"; };
+		09F5F50421E3C2FC00BCC785 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,8 @@
 		0904010921C819D7009C214E = {
 			isa = PBXGroup;
 			children = (
+				09F5F50121E3BA5000BCC785 /* utils */,
+				09F5F4FE21E3B9DE00BCC785 /* login */,
 				09F5F4F521E3B7A800BCC785 /* tech_headlines */,
 				0904011421C819D7009C214E /* JanAssaignment */,
 				0904011321C819D7009C214E /* Products */,
@@ -116,6 +124,7 @@
 				090B077E21D445F600F62767 /* AppDelegate.swift */,
 				090B077F21D445F600F62767 /* IGNNews.swift */,
 				090B078021D445F600F62767 /* Info.plist */,
+				09F5F50421E3C2FC00BCC785 /* GoogleService-Info.plist */,
 			);
 			name = JanAssaignment;
 			sourceTree = "<group>";
@@ -129,6 +138,22 @@
 				09F5F4F921E3B7A800BCC785 /* license.txt */,
 			);
 			path = tech_headlines;
+			sourceTree = "<group>";
+		};
+		09F5F4FE21E3B9DE00BCC785 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				09F5F4FF21E3BA0400BCC785 /* LoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		09F5F50121E3BA5000BCC785 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				09F5F50221E3BA6B00BCC785 /* constans.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +216,7 @@
 			files = (
 				0904012021C819DA009C214E /* LaunchScreen.storyboard in Resources */,
 				090B078221D445F600F62767 /* Assets.xcassets in Resources */,
+				09F5F50521E3C2FC00BCC785 /* GoogleService-Info.plist in Resources */,
 				09F5F4FC21E3B7A800BCC785 /* Tech Headlines.otf in Resources */,
 				090B078E21D44D1200F62767 /* ignLogo.png in Resources */,
 				09F5F4FD21E3B7A800BCC785 /* license.txt in Resources */,
@@ -207,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F5F50021E3BA0400BCC785 /* LoginViewController.swift in Sources */,
 				090B078821D445F600F62767 /* AppDelegate.swift in Sources */,
+				09F5F50321E3BA6B00BCC785 /* constans.swift in Sources */,
 				090B078521D445F600F62767 /* CustomTableViewCell.swift in Sources */,
 				09F33C2021DD657500782300 /* IgnAPIClient.swift in Sources */,
 				0904011821C819D7009C214E /* IGNViewController.swift in Sources */,

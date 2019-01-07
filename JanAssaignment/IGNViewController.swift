@@ -96,5 +96,11 @@ extension IGNViewController: SFSafariViewControllerDelegate {
 }
 
 extension IGNViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchtext = searchBar.text else {
+            return
+        }
+        
+    }
     
 }

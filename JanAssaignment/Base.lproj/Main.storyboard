@@ -132,7 +132,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+            <point key="canvasLocation" x="1553" y="27"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="u0w-wv-J1K">
+            <objects>
+                <viewController id="oz1-M8-B8N" customClass="LoginViewController" customModule="JanAssaignment" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZAb-SR-YhG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gQZ-mh-PDd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptr-rj-Lvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="-505"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fcl-Ha-1eL">
@@ -150,7 +165,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4EK-lj-WZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+            <point key="canvasLocation" x="-226" y="27"/>
         </scene>
     </scenes>
 </document>
